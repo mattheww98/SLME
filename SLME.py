@@ -8,10 +8,9 @@ import pandas as pd
 import math
 from scipy.integrate import simps
 
-class Efficiency():
+class Efficiency(solar_path="AM15G.csv"):
     def __init__(
         self,
-        solar_path = "~/optics/AM15G.csv",
     ):
         self.c = constants.c
         self.h = constants.h
