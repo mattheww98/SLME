@@ -3,12 +3,12 @@ from scipy import constants
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-from scipy.integrate import simps
+from scipy.integrate import simpson as simps
 
 class Efficiency():
     def __init__(
             self,
-            solar_path="AM15G.csv"):
+            solar_path="/home/matthew/SLME/AM15G.csv"):
         self.c = constants.c
         self.h = constants.h
         self.q = constants.e
